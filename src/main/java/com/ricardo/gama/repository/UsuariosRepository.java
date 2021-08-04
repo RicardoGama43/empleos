@@ -8,6 +8,6 @@ import com.ricardo.gama.model.Usuario;
 public interface UsuariosRepository extends JpaRepository<Usuario, Integer> {
 	
 	//metodo personalizado con sql nativo
-	@Query(value="select count(*) from usuarios", nativeQuery = true)
+	@Query(value="select count(*) from Usuarios", nativeQuery = true)
 	Integer totalEntidades();
 }
